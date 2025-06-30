@@ -1,0 +1,12 @@
+[Unit]
+Description=WiFi Connectivity Checker
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/home/pi/iot-provisioner/services/wifi-checker.sh
+Restart=always
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target

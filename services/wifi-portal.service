@@ -1,0 +1,11 @@
+[Unit]
+Description=Captive WiFi Portal
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/iot-provisioner/portal/app.py
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>WiFi Provisioning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body class="container mt-5">
+    <h2>Connect Raspberry Pi to WiFi</h2>
+    <form method="POST">
+      <div class="mb-3">
+        <label>WiFi SSID</label>
+        <input name="ssid" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label>Password</label>
+        <input name="password" type="password" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Connect</button>
+    </form>
+  </body>
+</html>
